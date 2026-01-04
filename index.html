@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Imposter Game & Word Generator - PlayImposter.com</title>
+    <meta name="description"
+          content="The ultimate tool to generate words, roles, and rules for your party in seconds. No downloads, no sign-ups.">
+    <link rel="canonical" href="https://playimposter.com/">
+    <meta property="og:title" content="Imposter Game & Word Generator - PlayImposter.com">
+    <meta property="og:description"
+          content="The ultimate tool to generate words, roles, and rules for your party in seconds. No downloads, no sign-ups.">
+    <meta property="og:url" content="https://playimposter.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://playimposter.com/share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🚀 Play the Imposter Game Online - Free & Instantly!">
+    <meta name="twitter:description" content="Gather your friends! Generate words, assign secret roles, and unmask the imposter in this thrilling social deduction game. No downloads, just pure fun. Try it now!">
+    <meta name="twitter:image" content="https://playimposter.com/share.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style"
+          fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+    </noscript>
+    <style>:root {
+        --background-color: #121212;
+        --primary-text: #FFFFFF;
+        --secondary-text: #BDBDBD;
+        --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-size-h1: 40px;
+        --font-size-body: 16px;
+        --font-weight-regular: 400;
+        --font-weight-bold: 700;
+        --spacing-sm: 16px;
+        --spacing-md: 24px;
+        --spacing-xl: 48px;
+    }
+
+    body {
+        font-family: var(--font-family);
+        background-color: var(--background-color);
+        color: var(--primary-text);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    #app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+
+    .main-content {
+        flex: 1;
+        padding: var(--spacing-md);
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .hero-section {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+        padding-top: var(--spacing-xl)
+    }
+
+    .hero-title {
+        font-size: var(--font-size-h1);
+        font-weight: var(--font-weight-bold);
+        color: var(--primary-text);
+        margin-bottom: var(--spacing-sm);
+        line-height: 1.2
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-body);
+        color: var(--secondary-text);
+        font-weight: var(--font-weight-regular)
+    }</style>
+    <link rel="stylesheet" href="/src/style.css">
+
+    <!-- SEO: FAQPage Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How do you play the Imposter Word Game?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It's simple! Everyone gets a secret word, except for one person—the Imposter. Players take turns giving one-word clues about the secret word. The Imposter must pretend they know the word and try to blend in. After a few rounds, everyone votes on who they think the Imposter is."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the goal of the game?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For most players (the \"Civilians\"), the goal is to identify and vote out the Imposter. For the Imposter, the goal is to survive the vote without being discovered. If they survive, they can score bonus points by guessing the secret word."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How many people do you need to play?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You need at least 4 players for a good game, but it's best with groups of 6 to 10. Our generator is flexible for any group size."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you win?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We recommend a simple point system. If the Civilians correctly vote out the Imposter, their team gets 1 point. If the Imposter survives the vote, they get 1 point, plus another bonus point if they correctly guess the secret word. Play as many rounds as you like!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does this Imposter (or Impostor)  Game Generator do?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our free tool does all the setup work for you! It instantly generates a secret word and the correct number of roles (e.g., '1 Imposter,' '5 Civilians') for your group. It completely replaces the need to brainstorm words or write on slips of paper. Just generate, and your game materials are ready!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is this Imposter Word Generator free to use?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our generator is 100% free to use on any device with a web browser. No downloads or sign-ups are required."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I use your generator to play the game in real life?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! This tool is designed to be the perfect companion for your in-person gatherings. Just open this website on a phone, pass it around for everyone to see their secret role and word, and you're ready to play."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are some good words to use for the game?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We've built a massive list of words organized by category and difficulty! Our generator includes everything from simple words for kids (like Pizza, Dog, School) to trickier ones for adults across categories like Movies, Technology, and even Silly & Random words."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Any tips for being a good Imposter?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Listen carefully to the first few clues to get an idea of the category. Give vague but plausible clues that could fit multiple concepts. For example, if you hear \"cheesy\" and \"round,\" a good vague clue might be \"party.\" Pay attention to how others give clues and try to mimic their confidence."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are some fun variations of the game?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can try different rules! For larger groups, add a second Imposter. You can also allow short phrases instead of single-word clues for more creativity, or choose a specific category (like \"Animals\") before generating a word to narrow the focus."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7787758263938410"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="app">
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="hero-section">
+            <h1 class="hero-title">Imposter Game & Word Generator</h1>
+            <p class="hero-subtitle">Generate words, roles, and rules for your party in seconds. No downloads, no
+                sign-ups.</p>
+        </div>
+
+        <!-- Core Action Area -->
+        <div class="action-section">
+            <button class="btn btn-primary btn-large" onclick="window.location.href='/party-mode/overview'">
+                🚀 Generate Your Game
+            </button>
+
+            <div class="text-center mt-md">
+                <a href="/word-generator/imposter-game-word-generator" class="btn btn-secondary btn-large">
+                    🎲 Use the Word Generator
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- How It Works Section -->
+    <div class="how-it-works-container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">A simple game for any party, using just one phone.</p>
+        <div class="steps-grid">
+            <div class="step-item">
+                <div class="step-icon">🎛️</div>
+                <h3>1. Configure</h3>
+                <p>Click "Generate Your Game", then Set up players and word packs.</p>
+            </div>
+            <div class="step-item">
+                <div class="step-icon">🤫</div>
+                <h3>2. Pass Around</h3>
+                <p>Everyone secretly gets their role on one phone.</p>
+            </div>
+            <div class="step-item">
+                <div class="step-icon">🎉</div>
+                <h3>3. Play!</h3>
+                <p>Start your offline party game.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="cta-card">
+            <h2 class="cta-title">New to the Game?</h2>
+            <p class="cta-content">Check out our ultimate strategy guide and learn winning tactics from beginner to
+                expert level.</p>
+            <a href="/blogs/how-to-play" class="btn btn-cta">View Rules</a>
+        </div>
+    </div>
+
+
+    <div class="seo-content">
+        <section class="faq-section" aria-labelledby="faq-heading-main">
+            <h2 id="faq-heading-main">Frequently Asked Questions</h2>
+
+            <h3>How to Play</h3>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>How do you play the Imposter Word Game?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>It's simple! Everyone gets a secret word, except for one person—the Imposter. Players take turns giving one-word clues about the secret word. The Imposter must pretend they know the word and try to blend in. After a few rounds, everyone votes on who they think the Imposter is.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>What is the goal of the game?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>For most players (the "Civilians"), the goal is to identify and vote out the Imposter. For the Imposter, the goal is to survive the vote without being discovered. If they survive, they can score bonus points by guessing the secret word.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>How many people do you need to play?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>You need at least 4 players for a good game, but it's best with groups of 6 to 10. Our generator is flexible for any group size.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>How do you win?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>We recommend a simple point system. If the Civilians correctly vote out the Imposter, their team gets 1 point. If the Imposter survives the vote, they get 1 point, plus another bonus point if they correctly guess the secret word. Play as many rounds as you like!</p>
+                </div>
+            </details>
+
+            <h3>About This Generator</h3>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>What does this Imposter (or Impostor) Game Generator do?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>Our free tool does all the setup work for you! It instantly generates a secret word and the correct number of roles (e.g., '1 Imposter,' '5 Civilians') for your group. It completely replaces the need to brainstorm words or write on slips of paper. Just generate, and your game materials are ready!</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Is this Imposter Word Generator free to use?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>Yes, our generator is 100% free to use on any device with a web browser. No downloads or sign-ups are required.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Can I use your generator to play the game in real life?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>Absolutely! This tool is designed to be the perfect companion for your in-person gatherings. Just open this website on a phone, pass it around for everyone to see their secret role and word, and you're ready to play.</p>
+                </div>
+            </details>
+
+            <h3>Game Content & Tips</h3>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>What are some good words to use for the game?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>We've built a massive list of words organized by category and difficulty! Our generator includes everything from simple words for kids (like Pizza, Dog, School) to trickier ones for adults across categories like Movies, Technology, and even Silly & Random words.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Any tips for being a good Imposter?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>Listen carefully to the first few clues to get an idea of the category. Give vague but plausible clues that could fit multiple concepts. For example, if you hear "cheesy" and "round," a good vague clue might be "party." Pay attention to how others give clues and try to mimic their confidence.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>What are some fun variations of the game?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>You can try different rules! For larger groups, add a second Imposter. You can also allow short phrases instead of single-word clues for more creativity, or choose a specific category (like "Animals") before generating a word to narrow the focus.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Where can I find more word lists or categories?</span>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </summary>
+                <div class="faq-answer">
+                    <p>Absolutely! If you're looking for inspiration or specific themes, we've got you covered. <a href="/word-generator/imposter-game-word-list" class="text-link">Browse our complete Imposter Game Word Lists</a> for a wide variety of categories to make your game even more exciting.</p>
+                </div>
+            </details>
+        </section>
+    </div>
+
+    <!-- Footer Content Area -->
+    <footer class="footer-content">
+        <div class="text-center footer-link-section">
+            <p class="copyright">© <span id="year">2025</span> Imposter Game Generator. All Rights Reserved.</p>
+            <nav class="footer-nav" aria-label="Footer">
+                <a class="text-link" href="/">Home</a>
+                <a class="text-link" href="/about">About</a>
+                <a class="text-link" href="/contact">Contact</a>
+                <a class="text-link" href="/privacy">Privacy Policy</a>
+                <a class="text-link" href="/disclaimer">Disclaimer</a>
+                <a class="text-link" href="/terms">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+<script>
+    // Set dynamic year in footer
+    document.getElementById('year')?.replaceChildren(document.createTextNode(String(new Date().getFullYear())));
+</script>
+<!-- Third-party scripts: delayed load to improve TBT/LCP -->
+<script>
+    // 通用延迟加载器：在页面空闲或加载完成后再加载第三方脚本
+    function loadScript(src, attrs) {
+        var s = document.createElement('script');
+        s.src = src;
+        if (attrs) {
+            for (var k in attrs) {
+                s.setAttribute(k, attrs[k]);
+            }
+        }
+        (document.head || document.body).appendChild(s);
+    }
+
+    function load3p() {
+        // Google Analytics
+        loadScript('https://www.googletagmanager.com/gtag/js?id=G-Q8D19H52KE', {defer: ''});
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Q8D19H52KE');
+
+        // Google Ads
+        // loadScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7787758263938410', {
+        //     crossorigin: 'anonymous',
+        //     defer: ''
+        // });
+    }
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(load3p, {timeout: 3000});
+    } else {
+        window.addEventListener('load', function () {
+            setTimeout(load3p, 2000);
+        });
+    }
+</script>
+</body>
+</html>

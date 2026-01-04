@@ -1,0 +1,57 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 1. 背景 -->
+    <rect width="1200" height="630" fill="#1A1B1E"/>
+    <!-- 2. 视觉元素 -->
+    <g id="characters">
+        <!-- Character 1 (Normal) -->
+        <circle cx="350" cy="240" r="50" fill="#4B5563"/> 
+        <circle cx="350" cy="225" r="30" fill="#E5E7EB"/>
+        <!-- Character 2 (Normal) -->
+        <circle cx="500" cy="240" r="50" fill="#4B5563"/>
+        <circle cx="500" cy="225" r="30" fill="#E5E7EB"/>
+        <!-- Character 3 (Imposter - Masked) -->
+        <g id="imposter">
+            <circle cx="650" cy="240" r="50" fill="#4B5563"/>
+            <path d="M620 205 C625 230, 675 230, 680 205 L690 245 L610 245 Z" fill="#8B5CF6"/>
+        </g>
+        <!-- Character 4 (Normal) -->
+        <circle cx="800" cy="240" r="50" fill="#4B5563"/>
+        <circle cx="800" cy="225" r="30" fill="#E5E7EB"/>
+    </g>
+    <!-- Magnifying Glass - a bit higher now, and handle is shorter -->
+    <!-- ⭐ FIX APPLIED HERE ⭐ -->
+    <g id="magnifying-glass" transform="translate(650, 240) rotate(40)">
+        <circle cx="0" cy="0" r="80" stroke="#FFFFFF" stroke-width="15" fill="none"/>
+        <!-- The handle is now shorter (ends at 115,115 instead of 130,130) and I've tweaked the rotation slightly -->
+        <line x1="60" y1="60" x2="115" y2="115" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round"/>
+    </g>
+    <!-- 3. 文本内容 -->
+    <style>
+        .title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 80px;
+            font-weight: 800;
+            fill: #FFFFFF;
+            text-anchor: middle;
+        }
+        .subtitle {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            fill: #A1A1AA;
+            text-anchor: middle;
+        }
+        .url {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            fill: #71717A;
+            text-anchor: middle;
+        }
+    </style>
+    <!-- Text block moved down slightly for better clearance -->
+    <!-- ⭐ FIX APPLIED HERE ⭐ -->
+    <text x="600" y="450" class="title">Imposter Game</text>
+    <text x="600" y="515" class="subtitle">Can you spot the one who doesn't belong?</text>
+    <text x="600" y="575" class="url">playimposter.com</text>
+</svg>

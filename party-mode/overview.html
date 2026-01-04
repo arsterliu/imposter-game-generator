@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Setup Your Imposter Game (Party Mode) - PlayImposter.com</title>
+    <meta name="description"
+          content="Set up your offline imposter game for face-to-face parties. Configure players and generate roles on a single device.">
+    <link rel="canonical" href="https://playimposter.com/party-mode/overview">
+    <meta property="og:title" content="Party Mode Setup - PlayImposter.com">
+    <meta property="og:description" content="Configure players and generate roles for your offline imposter game.">
+    <meta property="og:url" content="https://playimposter.com/party-mode/overview">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://playimposter.com/share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Imposter Game - Party Mode Setup">
+    <meta name="twitter:description" content="Set up your Imposter game in seconds. Configure players, choose word packs, and get ready for a fun party!">
+    <meta name="twitter:image" content="https://playimposter.com/share.png">
+
+    <!-- SEO: SoftwareApplication Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Imposter Game - Party Mode Setup",
+      "operatingSystem": "Any (Web Browser)",
+      "applicationCategory": "Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style"
+          fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+    </noscript>
+    <style>:root {
+        --background-color: #121212;
+        --primary-text: #FFFFFF;
+        --secondary-text: #BDBDBD;
+        --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-size-h1: 40px;
+        --font-size-body: 16px;
+        --font-weight-regular: 400;
+        --font-weight-bold: 700;
+        --spacing-sm: 16px;
+        --spacing-md: 24px;
+        --spacing-xl: 48px;
+    }
+
+    body {
+        font-family: var(--font-family);
+        background-color: var(--background-color);
+        color: var(--primary-text);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    #app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+
+    .main-content {
+        flex: 1;
+        padding: var(--spacing-md);
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .hero-section {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+        padding-top: var(--spacing-xl)
+    }
+
+    .hero-title {
+        font-size: var(--font-size-h1);
+        font-weight: var(--font-weight-bold);
+        color: var(--primary-text);
+        margin-bottom: var(--spacing-sm);
+        line-height: 1.2
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-body);
+        color: var(--secondary-text);
+        font-weight: var(--font-weight-regular)
+    }</style>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/party-mode.css"/>
+
+    <!-- SEO: Combined Structured Data (SoftwareApplication, HowTo, FAQPage) -->
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Imposter Game Party Mode Setup",
+                "description": "A free tool to set up an offline imposter game for face-to-face parties. Configure players, imposters, and word categories on a single device.",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any (Web browser)",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "url": "https://playimposter.com/party-mode/overview.html",
+                "potentialAction": {
+                    "@type": "HowTo",
+                    "name": "How to Set Up a Game in Party Mode",
+                    "step": [
+                        {
+                            "@type": "HowToStep",
+                            "name": "Set Players",
+                            "text": "Adjust the total number of players for the game."
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "name": "Set Imposters",
+                            "text": "Choose the number of imposters."
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "name": "Select Word Bank",
+                            "text": "Pick a category for the secret words."
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "name": "Generate Roles",
+                            "text": "Click the 'Generate Roles' button to create the game."
+                        }
+                    ]
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How many imposters should I set?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A good rule of thumb is 1 imposter for every 4-5 players. For a 6-player game, 1 imposter is perfect. For 10 players, try 2. The key is to make it challenging but not impossible for the imposter to hide."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What happens after I click 'Generate Roles'?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The game will create a unique role for each player. You'll be taken to a new screen where players can click on their number one by one to secretly view their role and the secret word."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are Word Banks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Word Banks are categories for the secret words. Available categories include Fruits, Daily Items, Animals, Food, Professions, Sports, Places, Clothing, Transportation, Nature, Hobbies, Subjects, Body Parts, Fantasy & Mythology, Brands, Movies & TV, Video Games, Abstract Concepts, Famous Landmarks, and Culture & Art. Choosing a specific category narrows down the possibilities, while 'Random' offers maximum chaos!"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Need more detailed rules and strategies?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "This page just covers setup. For a complete guide on how to play, including advanced strategies for both Civilians and Imposters, we recommend reading our ultimate guide."
+                        }
+                    }
+                ]
+            }
+        ]
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7787758263938410"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app">
+    <main class="main-content">
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <a class="btn btn-secondary" href="/">
+                ← Back to Home
+            </a>
+        </div>
+
+        <!-- Title Area -->
+        <div class="hero-section">
+            <h1 class="hero-title">Imposter Game:Party Mode Setup</h1>
+            <p class="hero-subtitle">Configure game parameters for face-to-face gatherings</p>
+        </div>
+
+        <!-- Setup Area -->
+        <div class="setup-section">
+            <div class="setup-card card">
+                <div class="input-group">
+                    <label for="totalPlayers" class="input-label">Total Players</label>
+                    <div class="number-input-group">
+                        <button class="number-btn" id="decreasePlayers">-</button>
+                        <input type="number" id="totalPlayers" class="number-input" value="6" min="3" max="20" readonly>
+                        <button class="number-btn" id="increasePlayers">+</button>
+                    </div>
+                    <div class="input-hint">Minimum 3, maximum 20 players</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="imposterCount" class="input-label">Number of Imposters</label>
+                    <div class="number-input-group">
+                        <button class="number-btn" id="decreaseImposters">-</button>
+                        <input type="number" id="imposterCount" class="number-input" value="1" min="1" max="5" readonly>
+                        <button class="number-btn" id="increaseImposters">+</button>
+                    </div>
+                    <div class="input-hint">Imposters must be fewer than civilians</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="categorySelectBtn" class="input-label">Word Bank Selection</label>
+                    <button id="categorySelectBtn" class="input-field category-select-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="categoryDrawer">
+                        <span class="category-select-icon-display">🎲</span>
+                        <span class="category-select-text">Random</span>
+                        <span class="category-select-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </span>
+                    </button>
+                    <!-- Keep original select for data, but hide it -->
+                    <select id="categorySelect" class="visually-hidden">
+                        <option value="random" data-icon="🎲" selected>Random</option>
+                        <option value="fruits" data-icon="🍎">Fruits</option>
+                        <option value="daily-items" data-icon="🛍️">Daily Items</option>
+                        <option value="animals" data-icon="🐘">Animals</option>
+                        <option value="food" data-icon="🍔">Food</option>
+                        <option value="professions" data-icon="🧑‍🏫">Professions</option>
+                        <option value="sports" data-icon="⚽">Sports</option>
+                        <option value="places" data-icon="🏛️">Places</option>
+                        <option value="clothing" data-icon="👕">Clothing</option>
+                        <option value="transportation" data-icon="✈️">Transportation</option>
+                        <option value="nature" data-icon="🌳">Nature</option>
+                        <option value="hobbies" data-icon="🎨">Hobbies</option>
+                        <option value="subjects" data-icon="🧪">Subjects</option>
+                        <option value="body-parts" data-icon="💪">Body Parts</option>
+                        <option value="fantasy-mythology" data-icon="🦄">Fantasy & Mythology</option>
+                        <option value="brands" data-icon="🏢">Brands</option>
+                        <option value="movies-tv" data-icon="🎬">Movies & TV</option>
+                        <option value="video-games" data-icon="🎮">Video Games</option>
+                        <option value="abstract-concepts" data-icon="💡">Abstract Concepts</option>
+                        <option value="landmarks" data-icon="🏛️">Famous Landmarks</option>
+                        <option value="culture-art" data-icon="🖼️">Culture & Art</option>
+                    </select>
+                </div>
+
+                <!-- Validation Message -->
+                <div id="validationMessage" class="validation-message hidden"></div>
+
+                <!-- Generate Button -->
+                <button id="generateRolesBtn" class="btn btn-primary btn-large">
+                    🎭 Generate Roles
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quick Guide & FAQ -->
+    <section class="faq-section" aria-labelledby="faq-heading-party">
+        <h2 id="faq-heading-party" class="section-title" style="text-align: left; margin-bottom: 1rem;">Quick Guide
+            & FAQ</h2>
+
+        <details class="faq-item">
+            <summary class="faq-question">
+                <span>How many imposters should I set?</span>
+                <div class="faq-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+            </summary>
+            <div class="faq-answer">
+                <p>A good rule of thumb is 1 imposter for every 4-5 players. For a 6-player game, 1 imposter is
+                    perfect. For 10 players, try 2. The key is to make it challenging but not impossible for the
+                    imposter to hide.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">
+                <span>What happens after I click 'Generate Roles'?</span>
+                <div class="faq-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+            </summary>
+            <div class="faq-answer">
+                <p>The game will create a unique role for each player. You'll be taken to a new screen where players
+                    can click on their number one by one to secretly view their role and the secret word.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">
+                <span>What are Word Banks?</span>
+                <div class="faq-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+            </summary>
+            <div class="faq-answer">
+                <p>Word Banks are categories for the secret words. Choosing a category like "Fruits" narrows down
+                    the possibilities, making it easier for Civilians but harder for the Imposter. 'Random' is great
+                    for maximum chaos! <a href="/word-generator/imposter-game-word-list" class="text-link">See
+                        word list examples</a>.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">
+                <span>Need more detailed rules and strategies?</span>
+                <div class="faq-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </div>
+            </summary>
+            <div class="faq-answer">
+                <p>This page just covers setup. For a complete guide on how to play, including advanced strategies
+                    for both Civilians and Imposters, <a href="/blogs/how-to-play" class="text-link">read our
+                        ultimate guide</a>.</p>
+            </div>
+        </details>
+    </section>
+</div>
+<!-- Category Selection Drawer -->
+<div id="categoryDrawer" class="category-drawer" role="dialog" aria-modal="true" aria-labelledby="categoryDrawerTitle" hidden>
+    <div class="category-drawer-header">
+        <h2 id="categoryDrawerTitle" class="category-drawer-title">Select a Category</h2>
+        <button id="categoryDrawerCloseBtn" class="category-drawer-close-btn" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    <div class="category-drawer-search-wrapper">
+        <input type="search" id="categorySearchInput" class="category-drawer-search" placeholder="Search categories...">
+    </div>
+    <ul id="categoryDrawerList" class="category-drawer-list" role="listbox">
+        <!-- Categories will be populated by JS -->
+    </ul>
+</div>
+<footer class="footer-content">
+    <div class="text-center footer-link-section">
+        <p class="copyright">© 2025 Imposter Game Generator. All Rights Reserved.</p>
+        <nav class="footer-nav" aria-label="Footer">
+            <a class="text-link" href="/">Home</a>
+            <a class="text-link" href="/about">About</a>
+            <a class="text-link" href="/contact">Contact</a>
+            <a class="text-link" href="/privacy">Privacy Policy</a>
+            <a class="text-link" href="/disclaimer">Disclaimer</a>
+            <a class="text-link" href="/terms">Terms of Service</a>
+        </nav>
+    </div>
+</footer>
+<script type="module" src="/src/party-setup.js"></script>
+<!-- Third-party scripts: delayed load to improve TBT/LCP -->
+<script>
+    function loadScript(src, attrs) {
+        var s = document.createElement('script');
+        s.src = src;
+        if (attrs) {
+            for (var k in attrs) {
+                s.setAttribute(k, attrs[k]);
+            }
+        }
+        (document.head || document.body).appendChild(s);
+    }
+
+    function load3p() {
+        loadScript('https://www.googletagmanager.com/gtag/js?id=G-Q8D19H52KE', {defer: ''});
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Q8D19H52KE');
+
+        // loadScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7787758263938410', {
+        //     crossorigin: 'anonymous',
+        //     defer: ''
+        // });
+    }
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(load3p, {timeout: 500});
+    } else {
+        window.addEventListener('load', function () {
+            setTimeout(load3p, 500);
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Allow all crawlers for general indexing
+User-agent: *
+Allow: /
+
+# Disallow specific AI training crawlers
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://playimposter.com/sitemap.xml
